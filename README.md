@@ -8,8 +8,7 @@ Cluedo o Clue es un juego de mesa popular que fue producido originalmente por la
 
 ## Requisitos
 
-- Haz Fork del repositorio
-- Clónalo en tú área de trabajo local
+- Clona el repo asignado a tu área de trabajo local
 - Una vez resuelto:
 
 ```
@@ -17,11 +16,12 @@ $ git add .
 $ git commit -m "done"
 $ git push origin master
 ```
-- Haz Pull Request desde la master branch del repositorio con el nombre en la cabecera del mensaje.
 
 ## Ejercicio
 
-Escribe el código JavaScript en el fichero `src/clue.js`.
+1. Abre el fichero de test `SpecRunner.html` con [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+2. Escribe el código JavaScript en el fichero `src/clue.js`.
+3. Comprueba en tu navegador que los tests van pasando (si lo necesitas refresca la página de los tests)
 
 
 ## Iteración 1 - <small>Crear las cartas</small>
