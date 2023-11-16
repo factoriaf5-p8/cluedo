@@ -14,7 +14,7 @@ Cluedo o Clue es un juego de mesa popular que fue producido originalmente por la
 ```
 $ git add .
 $ git commit -m "done"
-$ git push origin master
+$ git push origin main
 ```
 
 ## Ejercicio
@@ -46,20 +46,22 @@ El juego representa el plano de una mansión y describe 15  habitaciones diferen
 
 Crea una estructura de datos para cada uno de los personajes, armas y habitaciones. Cada documento tendrá toda la información.
 
-Después de crear esta estructura, crea un array para cada uno de los datos y sube cada documento a su array correspondiente.
+Cuando hayas creado estas estructuras sube cada documento a su array correspondiente.
 
 Por ejemplo:
 
 ```javascript
-let mrGreen = {
-  // Properties
-};
+// Characters Collection
+const mrsPeacock = {name: "Peacko", edad:33}
+const charactersArray = [mrsPeacock,...];
 
-let rope = {
-  // Properties
-}
+// Rooms' Collection
+const dinningRoom  = {name:"Dinning Room"}
+const roomsArray = [dinningRoom,...];
 
-// etc
+// Weapons Collection
+const rope = {name: "rope",weight: 10}
+const weaponsArray = [rope,...];
 ```
 Tendrás tres arrays: `charactersArray`, `weaponsArray` y `roomsArray`.
 
@@ -67,21 +69,17 @@ Tendrás tres arrays: `charactersArray`, `weaponsArray` y `roomsArray`.
 
 Al inicio del juego, los jugadores barajan los mazos de cartas para crear combinaciones de *suspect*, *weapon* y *room*. Este será el misterio a resolver.
 
-### Los TESTS!
-
-El ejercicio constará de un test que se correrá mediante el fichero `SpecRunner.html`.
-
 ### Random Selector
 
-Crea un método `randomSelector` que seleccione de forma aleatoria un elemento del mazo de cartas. El método recibirá un `array` como argumento y devuelve un elemento random del array.
+Crea una función `randomSelector` que seleccione de forma aleatoria un elemento del mazo de cartas. El método recibe un `array` como argumento y devuelve un elemento random del array.
 
 ### Crea el misterio
 
-Crea un método `pickMistery` que llamará a `randomSelector` por cada mazo de cartas y devolverá un array con tres cartas escogidas: un personaje, un arma y una habitación.
+Crea una función `pickMistery` que llamará a `randomSelector` por cada mazo de cartas y devolverá un array con tres cartas escogidas: un personaje, un arma y una habitación.
 
 ## Iteración 3 - <small>Descubrir el misterio</small>
 
-Para revelar el misterio se ha de crear un método `revealMistery` que recibirá el array del misterio como argumento y lo devolverá revelado con este formato:
+Para revelar el misterio se ha de crear una función `revealMistery` que recibirá el array del misterio como argumento y lo devolverá revelado con este formato:
 
 **\<FIRST NAME\> \<LAST NAME\> killed Mr.Boddy using the \<WEAPON\> in the \<PLACE\>!!!!**
 

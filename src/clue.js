@@ -85,17 +85,11 @@ name: Patio
 */
 
 // Characters Collection
-const mrsPeacock = {name: "Peacko", edad:33}
-const charactersArray = [
-    {name: "Peacko", edad:33},
-
-];
-
-charactersArray[0].name
+const charactersArray = [];
 
 
 // Rooms' Collection
-const roomsArray = [{name:"ddd"}];
+const roomsArray = [];
 
 // Weapons Collection
 const weaponsArray = [];
